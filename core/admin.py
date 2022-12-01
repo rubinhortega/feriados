@@ -1,6 +1,9 @@
-from django.contrib import admin
-from .models import FeriadoModel
 from datetime import date
+
+from django.contrib import admin
+
+from .models import FeriadoModel
+
 
 class FeriadoModelAdmin(admin.ModelAdmin):
     list_display = ('nome', 'dia', 'mes','modificado_em','registrado_esse_ano','feriado_esse_mes')
